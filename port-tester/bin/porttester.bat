@@ -7,7 +7,7 @@ cd %~dp0
 
 nc -z %hostname% %port%
 if %errorlevel% equ 0 (
-    echo host=%hostname% port=%port% status=open
+    echo target=%hostname% port=%port% status=open
 ) else (
-    echo host=%hostname% port=%port% status=closed
+    echo target=%hostname% port=%port% status=closed
 )
